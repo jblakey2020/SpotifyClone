@@ -6,14 +6,18 @@ function sanitizeFormPassword($inputText) {
 }
 
 function sanitizeFormUsername($inputText) {
+//Does not allow user to input html into input fields
 	$inputText = strip_tags($inputText);
+	//Removed Spaces between Words
 	$inputText = str_replace(" ", "", $inputText);
 	return $inputText;
+	re
 }
 
 function sanitizeFormString($inputText) {
 	$inputText = strip_tags($inputText);
 	$inputText = str_replace(" ", "", $inputText);
+	//Make the entire string lowercase
 	$inputText = ucfirst(strtolower($inputText));
 	return $inputText;
 }
