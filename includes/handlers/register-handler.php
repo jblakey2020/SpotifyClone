@@ -11,7 +11,7 @@ function sanitizeFormUsername($inputText) {
 	//Removed Spaces between Words
 	$inputText = str_replace(" ", "", $inputText);
 	return $inputText;
-	re
+
 }
 
 function sanitizeFormString($inputText) {

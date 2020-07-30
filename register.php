@@ -1,5 +1,6 @@
 <?php
 	include("includes/classes/Account.php");
+	include("includes/classes/Constants.php");
 
 	$account = new Account();
 
@@ -34,25 +35,25 @@
 		<form id="registerForm" action="register.php" method="POST">
 			<h2>Create your free account</h2>
 			<p>
-				<?php echo $account->getError("Your username must be between 5 and 25 characters"); ?>
+				<?php echo $account->getError(Constants::$userNameChar); ?>
 				<label for="username">Username</label>
 				<input id="username" name="username" type="text" placeholder="e.g. bartSimpson" required>
 			</p>
 
 			<p>
-				<?php echo $account->getError("Your first name must be between 2 and 25 characters"); ?>
+				<?php echo $account->getError(Constants::$firstNameChar); ?>
 				<label for="firstName">First name</label>
 				<input id="firstName" name="firstName" type="text" placeholder="e.g. Bart" required>
 			</p>
 
 			<p>
-				<?php echo $account->getError("Your last name must be between 2 and 25 characters"); ?>
+				<?php echo $account->getError(Constants::$lastNameChar); ?>
 				<label for="lastName">Last name</label>
 				<input id="lastName" name="lastName" type="text" placeholder="e.g. Simpson" required>
 			</p>
 
 			<p>
-				<?php echo $account->getError("Your emails don't match"); ?>
+				<?php echo $account->getError(Constants::$emailInvalid); ?>
 				<?php echo $account->getError("Email is invalid"); ?>
 				<label for="email">Email</label>
 				<input id="email" name="email" type="email" placeholder="e.g. bart@gmail.com" required>
@@ -64,9 +65,9 @@
 			</p>
 
 			<p>
-				<?php echo $account->getError("Your passwords don't match"); ?>
-				<?php echo $account->getError("Your password can only contain numbers and letters"); ?>
-				<?php echo $account->getError("Your password must be between 5 and 30 characters"); ?>
+				<?php echo $account->getError(Constants::$passwordsDoNotMatch); ?>
+				<?php echo $account->getError(Constants::$passwordsDoNotLength); ?>
+				<?php echo $account->getError(Constants::$passwordsNotAlphNumeric); ?>
 				<label for="password">Password</label>
 				<input id="password" name="password" type="password" placeholder="Your password" required>
 			</p>
