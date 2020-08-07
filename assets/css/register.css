@@ -7,6 +7,7 @@ html,body{
 
 }
 
+
 #background{
     background-color: #000;
     background-image: url(../img/photo-1542281286-9e0a16bb7366.jpeg);
@@ -58,6 +59,8 @@ box-sizing: border-box;
     color:    #fff;
 }
 
+
+
 #inputContainer{
     width: 400px;
     padding: 45px;
@@ -69,6 +72,7 @@ box-sizing: border-box;
 #inputContainer h2{
     text-align: center;
 }
+
 /* all input fields type = text */
 #inputContainer input[type="email"],
 #inputContainer input[type="password"],
@@ -106,9 +110,18 @@ box-sizing: border-box;
 .hasAccountText span{
     font-weight: bold;
     font-size: 12px;
+    cursor: pointer;
    
 
 }
 .hasAccountText{
     text-align: center;
+}
+
+#loginform{
+    display: none;
+}
+#registerform{
+    display: none;
+
 }

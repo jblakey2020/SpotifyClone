@@ -25,6 +25,37 @@
 	
 </head>
 <body>
+	<?php
+				//Check if the submit button was pressed
+
+	if(isset($_POST['registerButton'])){
+		echo '<script>
+		$(document).ready(function(){
+	//creating a JQ uery object
+			$("#loginForm").hide();
+			$("#registerForm").show();
+			
+  
+
+	});
+	</script>';
+
+	}else{
+		echo '<script>
+		$(document).ready(function(){
+	//creating a JQ uery object
+			$("#loginForm").show();
+			$("#registerForm").hide();
+			
+  
+
+	});
+	</script>';
+	}
+
+	?>
+    
+
 	<div id="background">
 		<div id="loginContainer">
 
@@ -43,12 +74,11 @@
 
 					<button type="submit" name="loginButton">LOG IN</button>
 					<div class="hasAccountText">
-						<span id="hideLogIn">Do not Have account yet? SignUp Here</span>
+						<span id="hideLogIn" style="cursor: pointer;" >Do not Have account yet? SignUp Here</span>
 					</div>
 					
 				</form>
-
-
+		
 
 				<form id="registerForm" action="register.php" method="POST">
 					<h2>Create your free account</h2>
@@ -100,7 +130,7 @@
 
 					<button type="submit" name="registerButton">SIGN UP</button>
 					<div class="hasAccountText">
-						<span id="hideRegister">Already have an account? Login Here</span>
+						<span id="hideRegister" style="cursor: pointer;" >Already have an account? Login Here</span>
 					</div>
 					
 				</form>
