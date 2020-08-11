@@ -19,6 +19,8 @@
 <html>
 <head>
 	<title>Welcome to Slotify!</title>
+	<link href= "assets/css/register.css" rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px" />
+
 	<link rel="stylesheet" href="assets/css/register.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="assets/js/register.js"></script>
@@ -137,7 +139,21 @@
 
 
 			</div>
+			<div id="loginText">
+				<h1>Get great music, right away</h1>
+				<h1>Listen to loads of songs, for free</h1>
+				<ul>
+					<li>Discover music you will fall inlove with</li>
+					<li>Create your playlist</li>
+					<li>Follow artist to keep up to date</li>
+
+
+				</ul>
+
 			</div>
+			
+			</div>
+			
 	</div>
 
 </body>
