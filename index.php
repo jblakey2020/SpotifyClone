@@ -17,7 +17,42 @@ if(isset($_SESSION['userLoggedIn'])){
 </head>
 
 <body>
-<div id="nowPlayingBarContainer">
+	<div class="MainContainer">
+		<div class="TopContainer">
+			<div id="NavBarContainer">
+				<nav class="navBar">
+					<!-- navigation website go here -->
+					<a href="index.php" class="logo">
+						<img src="assets/img/icons/icons8-home.png" alt="">
+					</a>
+					<div class="group">
+						<div class="NavItem">
+							<a href="search.php" class="NavItemLink">Search</a>
+							<img src="assets/img/icons/icons8-search.png" alt="search">
+						</div>
+
+					</div>
+					<div class="group">
+					<div class="NavItem">
+							<a href="browse.php" class="NavItemLink">Bowse</a>
+						</div>
+						<div class="NavItem">
+							<a href="YourMusic.php" class="NavItemLink">Your Music</a>
+						</div>
+						<div class="NavItem">
+							<a href="profile.php" class="NavItemLink">Justin Blakey</a>
+						</div>
+						
+						
+					</div>
+
+				</nav>
+
+			</div>
+
+
+		</div>
+	<div id="nowPlayingBarContainer">
 	<div id="nowPlayingBar">
 		<div id="nowPlayingLeft">
 			<div class="content">
@@ -110,6 +145,9 @@ if(isset($_SESSION['userLoggedIn'])){
 
 
 </div>
+
+	</div>
+
 	
 </body>
 
